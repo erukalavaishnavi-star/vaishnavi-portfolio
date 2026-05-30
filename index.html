@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaishnavi Erukala — Explorer of the Digital Deep</title>
+  <!-- Modern Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Stylesheet link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <!-- Ocean Background Canvas -->
+  <canvas id="ocean-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">VE</div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">B.Tech CSE (AIML) · Hanamkonda, Telangana</p>
+      <h1 class="hero-name">Hi, I'm <span>Vaishnavi.</span></h1>
+      <div class="hero-rotating">
+        <div class="rotating-inner">
+          <span>I build ideas.</span>
+          <span>I explore technology.</span>
+          <span>I learn relentlessly.</span>
+          <span>I create digital experiences.</span>
+        </div>
+      </div>
+      <p class="hero-desc">A curious builder at the intersection of human ingenuity and machine intelligence — navigating the unknown depths of technology, one project at a time.</p>
+      <a href="#projects" class="hero-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 8 16 12 12 16"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        Explore my work
+      </a>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="depth-divider"><span class="depth-label">digital identity</span></div>
+    <div class="section-wrap">
+      <div class="about-grid">
+        <div class="reveal">
+          <span class="section-tag">about</span>
+          <h2 class="section-title">My Digital DNA</h2>
+          <p class="section-sub">Five words that define who I am as a technologist. Each node represents a facet of how I think, build, and grow — all connected, all essential.</p>
+          <br>
+          <p style="color:var(--text-dim);font-size:0.95rem;line-height:1.8;font-weight:300">Currently in my first year of B.Tech in CSE (AI & ML), I've already shipped multiple projects, participated in state-level buildathons, and built full-stack applications with real-world utility. I believe the best learning happens at the edge of what you know.</p>
+        </div>
+        <div>
+          <canvas id="dna-canvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <span class="stat-number" data-target="7" data-suffix="">0</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="0" data-suffix="" data-custom="∞">∞</span>
+          <span class="stat-label">Hours of Learning</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="9" data-suffix="">0</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="1" data-suffix="" data-label="State Level">0</span>
+          <span class="stat-label">Buildathon — State Level</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Galaxy Section -->
+  <section id="skills">
+    <div class="depth-divider"><span class="depth-label">skills galaxy</span></div>
+    <div class="section-wrap">
+      <div class="reveal" style="text-align:center;margin-bottom:1rem">
+        <span class="section-tag" style="justify-content:center">capabilities</span>
+        <h2 class="section-title">Orbit of Expertise</h2>
+        <p class="section-sub" style="margin:0 auto">Each planet is a skill. Hover to discover how I use it. The closer to the center, the more gravity it holds in my work.</p>
+      </div>
+      <div class="galaxy-container">
+        <canvas id="galaxy-canvas"></canvas>
+        <div class="skill-tooltip" id="skill-tooltip">
+          <h4 id="tt-title"></h4>
+          <p id="tt-desc"></p>
+          <div class="skill-bar"><div class="skill-bar-fill" id="tt-bar"></div></div>
+          <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-dim);margin-top:0.4rem" id="tt-level"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline">
+    <div class="depth-divider"><span class="depth-label">journey</span></div>
+    <div class="section-wrap" style="max-width:800px">
+      <div class="reveal">
+        <span class="section-tag">timeline</span>
+        <h2 class="section-title">The Expedition Log</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2023</div>
+          <div class="timeline-heading">Completed School & Scored 416/500</div>
+          <div class="timeline-body">Laid the foundations — strong academics from Indian High School (CBSE), building analytical thinking and discipline that would fuel everything to come.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2023–2025</div>
+          <div class="timeline-heading">Intermediate Excellence — 908/1000</div>
+          <div class="timeline-body">Studied MPC at Resonance Junior College. Sharpened logical reasoning and discovered a passion for computing. Scored 454/470 in Year I — near perfect.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Early College</div>
+          <div class="timeline-heading">First Code, First Build</div>
+          <div class="timeline-body">Started with HTML & CSS, built Agro AI — a static website with multilingual farming guidance concepts. Discovered that building things feels better than just learning about them.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Hackathons</div>
+          <div class="timeline-heading">Stepped into the Arena</div>
+          <div class="timeline-body">Participated in state-level Buildathon competitions. Won selection for innovative AI-based problem solving. Attended robotics, gesture-tech, and Gen AI workshops.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">Now</div>
+          <div class="timeline-heading">Building Real Things</div>
+          <div class="timeline-body">Shipped the Career Intelligence Agent (CIA) — a full-stack React app with Google OAuth, Groq API, and job aggregation. Currently deepening expertise in AI, automation, and system design.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="depth-divider"><span class="depth-label">work</span></div>
+    <div class="section-wrap">
+      <div class="reveal">
+        <span class="section-tag">case studies</span>
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-tag">01 — Full Stack · React · AI</div>
+          <div class="project-title">Career Intelligence Agent</div>
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <div class="project-meta-label">Challenge</div>
+              <div class="project-meta-val">Students lack structured, AI-powered career strategy tools</div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Impact</div>
+              <div class="project-meta-val">End-to-end career platform with real job discovery</div>
+            </div>
+          </div>
+          <p style="color:var(--text-dim);font-size:0.85rem;line-height:1.7">Built a production-grade React platform with Google OAuth, Groq AI for strategy reports, GitHub profile enrichment, and modular frontend architecture separating UI from business logic.</p>
+          <div class="project-tech">
+            <span>React</span><span>Vite</span><span>Groq API</span><span>Google OAuth</span><span>React Router</span>
+          </div>
+          <a href="https://cia-career-intelligence.vercel.app/" target="_blank" class="project-link">View project →</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-tag">02 — Automation · n8n · APIs</div>
+          <div class="project-title">Sociality News Engine</div>
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <div class="project-meta-label">Challenge</div>
+              <div class="project-meta-val">Manual news curation is slow and unscalable</div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Impact</div>
+              <div class="project-meta-val">Fully automated daily news pipeline in structured JSON</div>
+            </div>
+          </div>
+          <p style="color:var(--text-dim);font-size:0.85rem;line-height:1.7">Automated news aggregation using RSS feeds, n8n workflows, and API integrations. Converts raw news data into clean structured JSON with automated file management.</p>
+          <div class="project-tech">
+            <span>n8n</span><span>RSS</span><span>JSON</span><span>APIs</span><span>HTML/CSS/JS</span>
+          </div>
+          <a href="https://sociality1.niat.tech/" target="_blank" class="project-link">View project →</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-tag">03 — Gen AI · AgriTech</div>
+          <div class="project-title">KrishnaKrushik — Buildathon</div>
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <div class="project-meta-label">Challenge</div>
+              <div class="project-meta-val">Farmers lack accessible AI-powered agricultural guidance</div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Impact</div>
+              <div class="project-meta-val">State-level buildathon selection — real social impact</div>
+            </div>
+          </div>
+          <p style="color:var(--text-dim);font-size:0.85rem;line-height:1.7">AI farming assistant using Generative AI and advanced prompt engineering. Designed for low-literacy users with intuitive UX and smart crop recommendations.</p>
+          <div class="project-tech">
+            <span>Gen AI</span><span>Prompt Engineering</span><span>UX Design</span>
+          </div>
+          <a href="https://krishna-krushik-ai.lovable.app/" target="_blank" class="project-link">View project →</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-tag">04 — Python · Algorithms</div>
+          <div class="project-title">Agent Guess Master</div>
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <div class="project-meta-label">Challenge</div>
+              <div class="project-meta-val">Build adaptive AI that refines its guesses dynamically</div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Impact</div>
+              <div class="project-meta-val">Demonstrates heuristic reasoning and inference design</div>
+            </div>
+          </div>
+          <p style="color:var(--text-dim);font-size:0.85rem;line-height:1.7">Interactive inference engine that dynamically updates its guesses based on user feedback. Implements iterative search refinement and adaptive reasoning logic.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Heuristics</span><span>DSA</span>
+          </div>
+          <a href="https://github.com/erukalavaishnavi-star/Agent-Guess-Master" target="_blank" class="project-link">GitHub →</a>
+        </div>
+
+        <!-- Project 5 [NEW] -->
+        <div class="project-card reveal">
+          <div class="project-tag">05 — HTML/CSS · AgriTech · Multilingual</div>
+          <div class="project-title">Agro AI — Assistant Website</div>
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <div class="project-meta-label">Challenge</div>
+              <div class="project-meta-val">High barrier for farmers to access crop guidance</div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Impact</div>
+              <div class="project-meta-val">Responsive static site with Telugu, Hindi & Kannada guidance</div>
+            </div>
+          </div>
+          <p style="color:var(--text-dim);font-size:0.85rem;line-height:1.7">Developed a responsive static website showcasing AI-powered crop guidance and disease detection concepts. Implemented multilingual support to improve accessibility for regional farmers.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Multilingual UX</span>
+          </div>
+          <a href="https://agroai.niat.tech/" target="_blank" class="project-link">View project →</a>
+        </div>
+
+        <!-- Project 6 [NEW] -->
+        <div class="project-card reveal">
+          <div class="project-tag">06 — SQL · SQLite · Schema Design</div>
+          <div class="project-title">Mini Mart DBMS</div>
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <div class="project-meta-label">Challenge</div>
+              <div class="project-meta-val">Retail inventory and orders lack structure and normalization</div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Impact</div>
+              <div class="project-meta-val">Robust relational database supporting billing & custom alerts</div>
+            </div>
+          </div>
+          <p style="color:var(--text-dim);font-size:0.85rem;line-height:1.7">Designed a normalized relational schema for products, inventory, orders, and billing in a retail scenario. Wrote complex SQL queries using joins, aggregations, window functions, and conditional filtering.</p>
+          <div class="project-tech">
+            <span>SQL</span><span>SQLite</span><span>Database Normalization</span><span>Query Design</span>
+          </div>
+          <a href="https://github.com/erukalavaishnavi-star" target="_blank" class="project-link">GitHub →</a>
+        </div>
+
+        <!-- Project 7 [NEW] -->
+        <div class="project-card reveal">
+          <div class="project-tag">07 — Python · Interpreters · DSL</div>
+          <div class="project-title">Pyone — DSL Interpreter</div>
+          <div class="project-meta">
+            <div class="project-meta-item">
+              <div class="project-meta-label">Challenge</div>
+              <div class="project-meta-val">Design a human-readable English-like scripting syntax</div>
+            </div>
+            <div class="project-meta-item">
+              <div class="project-meta-label">Impact</div>
+              <div class="project-meta-val">Interpreter supporting custom expressions and flow control</div>
+            </div>
+          </div>
+          <p style="color:var(--text-dim);font-size:0.85rem;line-height:1.7">Designed and implemented a minimal English-based DSL with custom syntax. Built a stack-based expression evaluation engine supporting arithmetic and logical operations, variables, and control flow.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Interpreters</span><span>Parsing</span><span>Runtime Engine</span>
+          </div>
+          <a href="https://github.com/TheNova6000/Pyone.git" target="_blank" class="project-link">GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Chat Section -->
+  <section id="ask">
+    <div class="depth-divider"><span class="depth-label">ask vaishnavi</span></div>
+    <div class="section-wrap">
+      <div class="reveal" style="text-align:center">
+        <span class="section-tag" style="justify-content:center">ai assistant</span>
+        <h2 class="section-title">Ask About Vaishnavi</h2>
+        <p class="section-sub" style="margin:0 auto 0">Curious about her skills, projects, or what she's learning? Ask anything below.</p>
+      </div>
+      <div class="chat-wrap reveal">
+        <div class="chat-header">
+          <div class="chat-dot"></div>
+          <span class="chat-title">vaishnavi.ai — online</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <div class="msg ai">
+            <div class="msg-avatar">AI</div>
+            <div class="msg-bubble">Hi! I'm Vaishnavi's portfolio assistant. I can tell you about her skills, projects, learning journey, and goals. What would you like to know?</div>
+          </div>
+        </div>
+        <div class="chat-questions">
+          <button class="chat-q-btn" onclick="askQuestion('What technologies does she know?')">What technologies does she know?</button>
+          <button class="chat-q-btn" onclick="askQuestion('What projects has she built?')">What projects has she built?</button>
+          <button class="chat-q-btn" onclick="askQuestion('What is she currently learning?')">What is she currently learning?</button>
+          <button class="chat-q-btn" onclick="askQuestion('What are her achievements?')">What are her achievements?</button>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" id="chat-input-field" placeholder="Ask something..." onkeydown="if(event.key==='Enter')sendChat()">
+          <button id="chat-send-btn" onclick="sendChat()">Send ↗</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Vision Section -->
+  <section id="vision">
+    <div class="depth-divider"><span class="depth-label">future vision</span></div>
+    <div class="section-wrap">
+      <div class="reveal">
+        <span class="section-tag">where I'm going</span>
+        <h2 class="section-title">The Horizon</h2>
+      </div>
+      <div class="roadmap reveal">
+        <div class="roadmap-step" data-num="01">
+          <span class="roadmap-icon">⬡</span>
+          <div class="roadmap-title">Software Engineering</div>
+          <div class="roadmap-desc">Building scalable, maintainable systems with clean architecture and thoughtful design.</div>
+          <div class="roadmap-status">IN PROGRESS →</div>
+        </div>
+        <div class="roadmap-step" data-num="02">
+          <span class="roadmap-icon">◈</span>
+          <div class="roadmap-title">Web Development</div>
+          <div class="roadmap-desc">Crafting immersive digital experiences that merge aesthetic sensibility with technical precision.</div>
+          <div class="roadmap-status">BUILDING →</div>
+        </div>
+        <div class="roadmap-step" data-num="03">
+          <span class="roadmap-icon">◭</span>
+          <div class="roadmap-title">AI-Powered Apps</div>
+          <div class="roadmap-desc">Embedding intelligence into everyday tools — making AI useful, accessible, and human-centered.</div>
+          <div class="roadmap-status">EXPLORING →</div>
+        </div>
+        <div class="roadmap-step" data-num="04">
+          <span class="roadmap-icon">◇</span>
+          <div class="roadmap-title">Useful Products</div>
+          <div class="roadmap-desc">Shipping products that solve real problems for real people — especially in agriculture and education.</div>
+          <div class="roadmap-status">DREAMING →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="depth-divider"><span class="depth-label">connect</span></div>
+    <div class="contact-inner reveal">
+      <span class="section-tag" style="justify-content:center;display:block;text-align:center">let's talk</span>
+      <h2 class="contact-headline">Let's Build Something Meaningful</h2>
+      <p class="contact-sub">Open to collaborations, internships, and conversations about technology, ideas, and the future. Reach out — I respond fast.</p>
+      <div class="contact-links">
+        <a href="mailto:erukalavaishnavi@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          Email me
+        </a>
+        <a href="https://github.com/erukalavaishnavi-star" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="tel:8328448653" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          +91 83284 48653
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-copy">© 2025 Vaishnavi Erukala</span>
+    <span class="footer-made">Crafted with <span>curiosity</span> & code</span>
+  </footer>
+
+  <!-- Script link -->
+  <script src="script.js"></script>
+</body>
+</html>
